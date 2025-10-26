@@ -7,6 +7,13 @@ import plotly.graph_objects as go
 from io import BytesIO
 import base64
 
+# Forçar compatibilidade
+import warnings
+warnings.filterwarnings('ignore')
+
+# Configurar pandas para compatibilidade
+pd.set_option('future.no_silent_downcasting', True)
+
 # Configuração da página
 st.set_page_config(
     page_title="Sistema de Gestão de Incidentes - Hemodiálise",
